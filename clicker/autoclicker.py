@@ -3,7 +3,7 @@ import time
 from openpyxl import load_workbook
 
 
-# Координаты (примерные, подправить)
+# Координаты
 COORDS = {
     "fio_input": (300, 200),      # Поле ФИО
     "clear_btn": (1011, 666),     # Кнопка "Очистить"
@@ -17,7 +17,7 @@ ws = wb.active
 
 # Пропускаем заголовок, начинаем со второй строки
 for row in ws.iter_rows(min_row=2, values_only=True):
-    fio, diagnosis = row[0], row[1]  # Подправить индексы под таблицу
+    fio, diagnosis = row[0], row[1]
     pyautogui.click(*COORDS["fio_input"])
     time.sleep(1)
     pyautogui.typewrite(str(fio))
