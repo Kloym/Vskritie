@@ -18,7 +18,7 @@ diagnosis_right = 1481
 diagnosis_bottom = 193
 diagnosis_step = patient_step
 
-# --- Прочие координаты и параметры (примерные, подправь под себя) ---
+# --- Прочие координаты и параметры ---
 first_code = (990, 885)
 code_step = 19
 max_codes = 10
